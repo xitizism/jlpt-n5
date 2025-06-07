@@ -1,24 +1,22 @@
 import 'package:flutter/material.dart';
 
 class ThemeProvider with ChangeNotifier {
-  ThemeData _lightTheme = ThemeData.light().copyWith(
+  final ThemeData _lightTheme = ThemeData.light().copyWith(
     primaryColor: Colors.blue,
     scaffoldBackgroundColor: Colors.white,
     colorScheme: ColorScheme.light(
       primary: Colors.blue,
       onPrimary: Colors.white,
-      background: Colors.white,
       surface: Colors.grey[200]!,
     ),
   );
 
-  ThemeData _darkTheme = ThemeData.dark().copyWith(
+  final ThemeData _darkTheme = ThemeData.dark().copyWith(
     primaryColor: Colors.blueAccent,
     scaffoldBackgroundColor: Colors.black,
     colorScheme: ColorScheme.dark(
       primary: Colors.blueAccent,
       onPrimary: Colors.black,
-      background: Colors.black,
       surface: Colors.grey[850]!,
     ),
   );

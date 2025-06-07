@@ -8,11 +8,11 @@ class CustomBottomNavBar extends StatefulWidget {
   final Function(bool) onDarkModeToggle;
 
   const CustomBottomNavBar({
-    Key? key,
+    super.key,
     required this.currentIndex,
     required this.onTap,
     required this.onDarkModeToggle,
-  }) : super(key: key);
+  });
 
   @override
   _CustomBottomNavBarState createState() => _CustomBottomNavBarState();
@@ -96,7 +96,7 @@ class _CustomBottomNavBarState extends State<CustomBottomNavBar>
             child: child,
           );
         },
-        child: Icon(Icons.settings),
+        child: const Icon(Icons.settings),
       ),
       label: 'Settings',
     );
@@ -112,13 +112,13 @@ class _CustomBottomNavBarState extends State<CustomBottomNavBar>
 void openSettingsScreen(BuildContext context) {
   Navigator.push(
     context,
-    MaterialPageRoute(builder: (context) => SettingsScreen()),
+    MaterialPageRoute(builder: (context) => const SettingsScreen()),
   );
 }
 
 void openTestPage(BuildContext context) {
   Navigator.push(
     context,
-    MaterialPageRoute(builder: (context) => TestPage()),
+    MaterialPageRoute(builder: (context) => const TestPage()),
   );
 }
