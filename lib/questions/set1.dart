@@ -5,7 +5,7 @@ final List<QuizQuestion> set1Questions = [
       question: "Roads are public places, and selfish driving can be a nuisance to those around you and cause traffic accidents, so when driving, you need to think about the other person and drive with compassion and compassion.",
       options: ["True", "False"],
       correctAnswer: "True",
-      remark: "When driving, think not only about yourself but also about your surroundings."
+      remark: "When driving, think nmnb jhbkjh ot only about yourself but also about your surroundings."
   ),
   QuizQuestion(
       question: "When a 12-year-old child is allowed to ride in a car, the child must be allowed to use a car seat.",
